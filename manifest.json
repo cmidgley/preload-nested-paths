@@ -1,0 +1,19 @@
+{
+	"include": [
+		"$(MODDABLE)/examples/manifest_base.json"
+	],
+	"modules": {
+		"root/main": "./src/main",
+
+		"root/#another": "./src/#another",
+		"root/another/index": "./src/another/index",
+		"root/another/root": "./src/another/root",
+		"root/another/nested/deeper/do-more": "./src/another/nested/deeper/do-more"
+	},
+	"preload": [
+		"root/main"
+	],
+	"creation": {
+		"main": "root/main"
+	}
+}
